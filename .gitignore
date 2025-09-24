@@ -1,0 +1,8 @@
+lava/Lib/
+__pycache__/
+*.pyc
+*.pyd
+*.dll
+.venv/
+env/
+venv/

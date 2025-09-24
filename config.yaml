@@ -1,0 +1,35 @@
+camera_index: 0
+resolution:
+  width: 640
+  height: 480
+websocket_port: 8765
+
+grid:
+  rows: 2
+  cols: 2
+  size_feet: 8
+  marker_ids:
+    TL: 0
+    TR: 1
+    BR: 2
+    BL: 3
+
+aruco:
+  dict: DICT_4X4_50
+
+smoothing:
+  consecutive_frames: 3
+  clear_frames: 2
+
+pose:
+  backend: mediapipe # options: mediapipe, yolov8
+
+demo_mode:
+  enabled: true
+  interval_seconds: 2
+  tiles_per_interval: 6
+
+udp:
+  enabled: false
+  host: 127.0.0.1
+  port: 9876
